@@ -1,0 +1,6 @@
+<h1>Show Request Sent</h1>
+<% @request.each do |req| %>
+  <div>
+    <h1><%= link_to req.name, request %></h1>
+  </div>
+<% end %>

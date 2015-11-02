@@ -1,0 +1,33 @@
+<h1>Create New Request</h1>
+
+
+<%= form_for @request do |f| %>
+<div class="form-group">
+
+  <%= f.label(:name) %>
+  <%= f.text_field(:name, {class: "form-control"}) %>
+</div>
+<div class="form-group">
+
+  <%= f.label(:email) %>
+  <%= f.text_field(:email, {class: "form-control"}) %>
+</div>
+<div class="form-group">
+  <!--  Not working-->
+  <%#= f.label(:department, "Sales") %>
+<%#= f.radio_button_tag(:department, "sales") %>
+<%#= f.label(:department, "Marketing") %>
+<%#= f.radio_button_tag(:department, "marketing") %>
+
+<%#= f.label(:department, "Technical") %>
+<%#= f.radio_button_tag(:department, "technical") %>
+<%= f.label(:department) %>
+  <%= f.text_field(:department, {class: "form-control"}) %>
+</div>
+ <div class="form-group">
+  <%= f.label(:message) %>
+ <%= f.text_area(:message, {class: "form-control"}) %>
+</div>
+
+<%= f.submit "Save" %>
+<% end %>

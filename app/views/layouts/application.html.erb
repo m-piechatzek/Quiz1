@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supporter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>  <div class="container">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+  <li><a href= "<%= requests_path %>"><i class='glyphicon glyphicon-home'></i>List of Requests</a></li>
+  <li><a href= "<%= new_request_path %>">New Request</a></li>
+
+
+</ul>
+</div>
+</div>
+</nav>
+
+
+<%= yield %>
+
+</body>
+</html>
